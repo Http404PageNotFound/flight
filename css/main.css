@@ -1,0 +1,492 @@
+body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Microsoft YaHei',Tahoma,Arial,'\5b8b\4f53',sans-serif;font-size:75%;line-height:1.5}body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,form,fieldset,input,textarea,button,select,pre,blockquote,hr{margin:0}fieldset,legend,button,ul,ol{padding:0}a{text-decoration:none}ul,ol{list-style:none}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}img{border:none}
+.left{
+	float: left;
+}
+.right {
+	float: right;
+}
+
+.hd{
+    height: 60px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    position: fixed;
+    top: 0;
+    z-index: 700;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.hd-main {
+  width: 1136px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.big{
+  width:99px;
+  height:38px;
+  margin: 11px 23px 0 0;
+  background: url('../images/big.png') center center no-repeat;
+  background-size: contain;
+  display:inline-block;
+  float:left;
+}
+
+.hd-nav {
+  float: left;
+}
+
+.hd-nav li a {
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  display:block;
+}
+
+.hd-nav li {
+  float: left;
+  text-align: center;
+  width: 123px;
+  line-height: 22px;
+  height: 61px;
+}
+
+.hd-nav li:hover, .hd-nav li.active_zone{
+    background-color: #ee5956 !important;
+    color: #ffffff;
+}
+
+.main1 {
+  height: 692px;
+  width: 100%;
+  background: url(../images/bg1.png) center center no-repeat;
+  overflow: hidden;
+  background-position: 0 62px;
+  position: relative;
+}
+
+.main2 {
+  height: 261px;
+  width: 100%;
+  background: #ffffff;
+}
+
+@-webkit-keyframes ripple {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.3);
+		transform: scale(0.3)
+	}
+
+	50% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1
+	}
+
+	100% {
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+		opacity: 0
+	}
+}
+
+@keyframes ripple {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.3);
+		transform: scale(0.3)
+	}
+
+	50% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1
+	}
+
+	100% {
+		-webkit-transform: scale(1.6);
+		transform: scale(1.6);
+		opacity: 0
+	}
+}
+
+.singularity{
+  width: 150px;
+  height: 179px;
+  margin: 160px auto 0;
+  position: relative;
+}
+
+.singularity .level1 {
+  opacity: 0;
+  -webkit-animation: ripple 1.5s linear 0s infinite;
+  animation: ripple 1.5s linear 0s infinite;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.singularity .level2 {
+  -webkit-animation: ripple 1.5s linear 0s infinite;
+  animation: ripple 1.5s linear 0s infinite;
+}
+
+.singularity .level1 {
+  width: 150px;
+  height: 150px;
+  background-color: #fdcbcb;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.singularity .level2 {
+  width: 82.5px;
+  height: 82.5px;
+  background-color: #f08181;
+  left: 33.75px;
+  top: 33.75px;
+  z-index: 2;
+}
+
+.singularity .level3 {
+  width: 49.5px;
+  height: 49.5px;
+  background-color: #e10601;
+  left: 50.25px;
+  top: 50.25px;
+  z-index: 3;
+}
+
+.singularity span {
+  position: absolute;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.banner_title{
+  background: url('../images/banner_title.png') center center no-repeat;
+  background-size: contain;
+  width: 505px;
+  height: 217px;
+  margin: 0 auto;
+  position: relative;
+  left: -46px;
+}
+
+.sponsor{
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ee5956;
+}
+
+.sponsor .logo{
+  background: url('../images/sponsor.png') center center no-repeat;
+  background-size: contain;
+  width: 523px;
+  height:52px;
+  margin: 34px auto;
+}
+
+.main2 .header{
+    height: 111px;
+}
+
+.main2 .title{
+    width: 170px;
+    margin: 50px auto 0;
+}
+
+.main2 .title span{
+    font-size: 28px;
+    display:inline-block;
+    margin-left:10px;
+}
+
+.main2 .title .glyphicon{
+    display: inline-block;
+    width: 34px;
+    height: 42px;
+    float: left;
+    background: url('../images/glyphicon1.png') center center no-repeat;
+    background-size: contain;
+}
+
+.main2 .content .lightred{
+    color: #ee5956;
+}
+
+.main2 .content {
+  width: 1302px;
+  margin: 0 auto;
+}
+
+.main2 .content section {
+  text-align: center;
+  font-size: 18px;
+  width: 890px;
+  margin: 0 auto 29px;
+}
+
+.main3 {
+  width: 100%;
+  background: #f7f7f7;
+}
+
+.main3 .header{
+    padding: 39px 0;
+}
+
+.main3 .title{
+    width: 280px;
+    margin: 0 auto;
+}
+
+.main3 .title span{
+    font-size: 28px;
+    display:inline-block;
+    margin-left:10px;
+}
+
+.main3 .title span:last-child{
+    font-size: 19px;
+    display:inline-block;
+    margin-left:10px;
+    color: #9d9d9d;
+}
+
+.main3 .title .glyphicon{
+    display: inline-block;
+    width: 34px;
+    height: 42px;
+    float: left;
+    background: url('../images/glyphicon2.png') center center no-repeat;
+    background-size: contain;
+}
+
+.main3 .content {
+  width: 1302px;
+  margin: 0 auto;
+}
+
+.main3 .content table, .main4 .content table{
+  width: 100%;
+}
+
+.main3 .content table td{
+    width:302px;
+    padding-bottom: 54px;
+}
+
+.main3 .content table td span{
+    text-align: center;
+    display:block;
+    font-size: 16px;
+}
+
+.main3 .content table td .name{
+    font-size: 21px;
+    margin-bottom: 21px;
+}
+
+.main3 .content table td img{
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 28px;
+}
+
+.main4 {
+  width: 100%;
+  background: #ffffff;
+}
+
+.main4 .header, .main5 .header,.main6 .header{
+    padding: 39px 0 49px;
+}
+
+.main4 .title, .main5 .title, .main6 .title{
+    width: 170px;
+    margin: 0 auto;
+}
+
+.main4 .title span, .main5 .title span, .main6 .title span{
+    font-size: 28px;
+    display:inline-block;
+    margin-left:10px;
+}
+
+.main4 .title .glyphicon{
+    display: inline-block;
+    width: 34px;
+    height: 42px;
+    float: left;
+    background: url('../images/glyphicon3.png') center center no-repeat;
+    background-size: contain;
+}
+
+.main4 .content {
+  width: 937px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main4 .content h1{
+  font-size: 31px;
+  color: #ee5956;
+  margin-bottom: 54px;
+}
+
+.main4 .content .schedule img{
+    width:89px;
+    height:89px;
+    display:block;
+    float:left;
+}
+
+.main4 .content .schedule{
+    margin-bottom: 42px;
+    display: block;
+}
+
+.main4 .content .schedule .article{
+    float:left;
+    width: 814px;
+    height:89px;
+    position:relative;
+}
+
+.main4 .content .date, .main4 .content .speech, .main4 .content .desc{
+    margin-left:30px;
+    float:left;
+    clear:left;
+}
+
+.main4 .content .date{
+    font-size: 19px;
+    color: #ee5956;
+}
+
+.main4 .content .date .date-clock{
+  background: url('../images/date_clock.png') center center no-repeat;
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  float: left;
+  margin: 4.5px 5px 0 0;
+  background-size: contain;
+}
+
+.main4 .content .speech{
+    text-align: left;
+    border-bottom: 1px dashed #9d9d9d;
+    width: 814px;
+}
+
+.main4 .content .speech span{
+    font-size: 19px;
+}
+
+.main4 .content .speech span:first-child{
+    font-weight:900;
+}
+
+.main4 .content .desc{
+    font-size: 14px;
+    color: #9d9d9d;
+    position:absolute;
+    bottom: 0;
+}
+
+.main5 {
+  width: 100%;
+  background: #f7f7f7;
+}
+
+.main5 .title .glyphicon{
+    display: inline-block;
+    width: 34px;
+    height: 42px;
+    float: left;
+    background: url('../images/glyphicon5.png') center center no-repeat;
+    background-size: contain;
+}
+
+.main5 .content{
+    height: 602px;
+    position: relative;
+}
+
+.main5 .content .location {
+  width: 417px;
+  padding-bottom: 14px;
+  background-color: #362e2b;
+  position: absolute;
+  z-index: 300;
+  top: 85px;
+  right: 18%;
+  color: #ffffff;
+}
+
+.main5 .content .location .hotel-name{
+  font-size: 23px;
+  margin: 20px 71px 5px 25px;
+}
+
+.main5 .content .location hr{
+  border: none;
+  border-bottom: 1px solid #ef1900;
+}
+
+.main5 .content .location .hotel-img{
+  background: url(../images/hotel.png) center center no-repeat;
+  background-size: contain;
+  width: 364px;
+  height: 310px;
+  margin: 10px auto;
+}
+
+.main5 .content .location .hotel-path{
+  font-size: 15px;
+  margin-left: 25px;
+}
+
+.main6 .title .glyphicon {
+  display: inline-block;
+  width: 25px;
+  height: 35px;
+  float: left;
+  margin: 3.5px 0;
+  background: url('../images/glyphicon6.png') center center no-repeat;
+  background-size: contain;
+}
+
+.main6 {
+  width: 100%;
+  background: #ffffff;
+  padding-bottom: 90px;
+}
+
+.main6 .content .logo-name{
+  font-size: 19px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-top: 21px;
+  width: 1140px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.main6 .content .logo{
+    height: 60px;
+    margin: 15px 6px 0;
+}
+
+.main6 .content .row{
+    width: 1220px;
+    margin: 0 auto;
+    text-align: center;
+}

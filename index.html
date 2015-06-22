@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,minimal-ui">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<title>新飞行时代</title>
+    <link rel="stylesheet" type="text/css" href="css/phone.css" media="screen and (max-width: 441px)">
+    <link rel="stylesheet" href="css/main.css" media="screen and (min-width: 442px)">
+    <script type="text/javascript" src="js/lib/respond.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="js/lib/underscore.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.lazyload.min.js"></script>
+    <script src="js/lib/require.js" defer data-main="js/require-main.js"></script>
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kSGRgqt4GRbPIc45mUkb8Grb"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+   <script id="guests" type="text/template">
+       <%_.each(guests, function(tr) {%>
+           <tr>
+               <%_.each(tr, function(td) {%>
+               <td>
+                   <img class="lazy" data-original="<%=td.src%>">
+                   <span class="name"><%=td.name%></span>
+                   <span class="represent"><%=td.represent%></span>
+                   <span class="place"><%=td.place%></span> </td>
+               <%});%>
+           </tr>
+       <%});%>
+   </script>
+   <script id="schedules" type="text/template">
+       <%_.each(schedules, function(tr) {%>
+           <tr class="schedule">
+               <td>
+                   <img class="lazy" data-original="<%=tr.src%>">
+                   <div class="article">
+                       <div class="date"><div class="date-clock"></div><span><%=tr.date%></span></div>
+                       <div class="speech"><span><%=tr.name%></span><span><%=tr.speech%></span></div>
+                       <div class="desc"><span><%=tr.desc%></span></div>
+                   </div>
+               </td>
+           </tr>
+       <%});%>
+   </script>
+   <script id="logos" type="text/template">
+       <%_.each(logos, function(row) {%>
+           <%if(row.name){%>
+               <div class="logo-name">
+                   <span><%=row.name%></span>
+               </div>
+           <%};%>
+           <div class="row">
+               <%_.each(row.logos, function(logo) {%>
+                   <img class="logo lazy" style="width:<%=logo.width%>px" data-original="images/logos/logo<%=logo.src%>.png">
+               <%});%>
+           </div>
+       <%});%>
+   </script>
+   <div class="hd">
+        <div class="hd-main clearfix">
+            <div class="big"></div>
+            <ul class="left hd-nav clearfix">
+                <li id="meeting"><a>关于大会</a></li>
+                <li id="invites"><a>邀请嘉宾</a></li>
+                <li id="schedule"><a>日程安排</a></li>
+                <li id="location"><a>活动地址</a></li>
+                <li id="partners"><a>合作伙伴</a></li>
+            </ul>
+        </div>
+   </div>
+
+
+   <div class="main1">
+        <div class="singularity"><span class="level1"></span><span class="level2"></span><span class="level3"></span></div>
+            <div class="banner_title"></div>
+            <div class="sponsor">
+                <div class="logo"></div>
+            </div>
+   </div>
+   <div class="main2">
+        <div class="header">
+            <div class="title">
+                <div class="glyphicon"></div><span>关于大会</span>
+            </div>
+        </div>
+        <div class="content">
+            <section>从开拓人类三维空间智能节点的无人机系统，不依赖化石能源无限续航的太阳能飞机，到重新定义位移能力的喷气背包，飞行已不再只是将人送上天空。</section>
+            <section>百度新闻 The BIG Talk与极客公园联合主办的<span class="lightred">「新飞行时代」</span>论坛，将为您展示最前沿的飞行科技。</section>
+        </div>
+   </div>
+   <div class="main3">
+        <div class="header">
+            <div class="title">
+                <div class="glyphicon"></div><span>邀请嘉宾</span><span>(持续确认中)</span>
+            </div>
+        </div>
+        <div class="content">
+            <table>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+   </div>
+   <div class="main4">
+        <div class="header">
+            <div class="title">
+                <div class="glyphicon"></div><span>日程安排</span>
+            </div>
+        </div>
+        <div class="content">
+            <h1>2015年07月10日  10:00上午</h1>
+        </div>
+        <div class="content">
+            <table>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+   </div>
+   <div class="main5">
+        <div class="header">
+            <div class="title">
+                <div class="glyphicon"></div><span>活动地址</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="location">
+                <div class="hotel-name">北京日出东方凯宾斯基酒店、雁栖酒店</div>
+                <hr>
+                <div class="hotel-img"></div>
+                <div class="hotel-path">
+                    <p>北京市怀柔区雁栖湖雁水路甲18号</p>
+                    <p>出行建议：乘坐我们的班车、公交、自驾车</p>
+                </div>
+            </div>
+            <div style="width:100%;height:100%;border:#ccc solid 1px;font-size:12px" id="map"></div>
+        </div>
+   </div>
+   <div class="main6">
+        <div class="header">
+            <div class="title">
+                <div class="glyphicon"></div><span>合作伙伴</span>
+            </div>
+        </div>
+       <div class="content">
+       </div>
+   </div>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){
+      map = new BMap.Map("map");
+      map.centerAndZoom(new BMap.Point(116.684,40.392905),15);
+    }
+    function setMapEvent(){
+      map.enableDragging();
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+    }
+    var map;
+    initMap();
+</script>
+</body>
+</html>
