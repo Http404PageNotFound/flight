@@ -35,11 +35,42 @@
            </tr>
        <%});%>
    </script>
+   <script id="phone_guests" type="text/template">
+       <%_.each(guests, function(tr) {%>
+           <tr>
+               <td>
+                   <img class="lazy" data-original="<%=tr.src%>">
+                   <hr>
+               </td>
+               <td>
+                   <span class="name"><%=tr.name%></span>
+                   <span class="represent"><%=tr.represent%></span>
+                   <span class="place"><%=tr.place%></span>
+               </td>
+           </tr>
+       <%});%>
+   </script>
    <script id="schedules" type="text/template">
        <%_.each(schedules, function(tr) {%>
            <tr class="schedule">
                <td>
                    <img class="lazy" data-original="<%=tr.src%>">
+                   <div class="article">
+                       <div class="date"><div class="date-clock"></div><span><%=tr.date%></span></div>
+                       <div class="speech"><span><%=tr.name%></span><span><%=tr.speech%></span></div>
+                       <div class="desc"><span><%=tr.desc%></span></div>
+                   </div>
+               </td>
+           </tr>
+       <%});%>
+   </script>
+   <script id="phone_schedules" type="text/template">
+       <%_.each(schedules, function(tr) {%>
+           <tr class="schedule">
+               <td>
+                   <img class="lazy" data-original="<%=tr.src%>">
+               </td>
+               <td>
                    <div class="article">
                        <div class="date"><div class="date-clock"></div><span><%=tr.date%></span></div>
                        <div class="speech"><span><%=tr.name%></span><span><%=tr.speech%></span></div>
@@ -66,36 +97,63 @@
    <div class="hd">
         <div class="hd-main clearfix">
             <div class="big"></div>
-            <ul class="left hd-nav clearfix">
+            <ul class="left hd-nav clearfix pc">
                 <li id="meeting"><a>关于大会</a></li>
                 <li id="invites"><a>邀请嘉宾</a></li>
                 <li id="schedule"><a>日程安排</a></li>
                 <li id="location"><a>活动地址</a></li>
                 <li id="partners"><a>合作伙伴</a></li>
             </ul>
+            <div class="phone-panel phone">
+                <div class="phone-trigger">
+                </div>
+                <div class="panel-select">
+                    <ul class="ul-panel">
+                        <li id="phone_meeting"><a>关于大会</a></li>
+                        <hr>
+                        <li id="phone_invites"><a>邀请嘉宾</a></li>
+                        <hr>
+                        <li id="phone_schedule"><a>日程安排</a></li>
+                        <hr>
+                        <li id="phone_location"><a>活动地址</a></li>
+                        <hr>
+                        <li id="phone_partners"><a>合作伙伴</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
    </div>
-
-
+   <div class="main0">
+        <div class="sense"></div>
+   </div>
    <div class="main1">
-        <div class="singularity"><span class="level1"></span><span class="level2"></span><span class="level3"></span></div>
+        <div class="singularity">
+            <div class="banner"></div>
+            <span class="level1"></span>
+            <span class="level2"></span>
+            <span class="level3"></span></div>
             <div class="banner_title"></div>
             <div class="sponsor">
                 <div class="logo"></div>
             </div>
    </div>
-   <div class="main2">
+   <div class="main2" id="main2">
         <div class="header">
             <div class="title">
                 <div class="glyphicon"></div><span>关于大会</span>
             </div>
         </div>
-        <div class="content">
+        <div class="content pc">
+            <section>从开拓人类三维空间智能节点的无人机系统，不依赖化石能源无限续航的太阳能飞机，</section>
+            <section>到重新定义位移能力的喷气背包，飞行已不再只是将人送上天空。</section>
+            <section>百度新闻 The BIG Talk与极客公园联合主办的<span class="lightred">「新飞行时代」</span>论坛，将为您展示最前沿的飞行科技。</section>
+        </div>
+        <div class="content phone">
             <section>从开拓人类三维空间智能节点的无人机系统，不依赖化石能源无限续航的太阳能飞机，到重新定义位移能力的喷气背包，飞行已不再只是将人送上天空。</section>
             <section>百度新闻 The BIG Talk与极客公园联合主办的<span class="lightred">「新飞行时代」</span>论坛，将为您展示最前沿的飞行科技。</section>
         </div>
    </div>
-   <div class="main3">
+   <div class="main3" id="main3">
         <div class="header">
             <div class="title">
                 <div class="glyphicon"></div><span>邀请嘉宾</span><span>(持续确认中)</span>
@@ -104,12 +162,11 @@
         <div class="content">
             <table>
                 <tbody>
-
                 </tbody>
             </table>
         </div>
    </div>
-   <div class="main4">
+   <div class="main4" id="main4">
         <div class="header">
             <div class="title">
                 <div class="glyphicon"></div><span>日程安排</span>
@@ -125,26 +182,31 @@
             </table>
         </div>
    </div>
-   <div class="main5">
+   <div class="main5" id="main5">
         <div class="header">
             <div class="title">
                 <div class="glyphicon"></div><span>活动地址</span>
             </div>
         </div>
         <div class="content">
+            <div class="phone map">
+                <img data-original="images/phone/map.png" class="lazy">
+            </div>
             <div class="location">
-                <div class="hotel-name">北京日出东方凯宾斯基酒店、雁栖酒店</div>
+                <div class="hotel-name">北京雁栖酒店凯宾斯基酒店</div>
                 <hr>
-                <div class="hotel-img"></div>
+                <div class="hotel-img">
+                    <img class="lazy phone" data-original="images/hotel.png">
+                </div>
                 <div class="hotel-path">
                     <p>北京市怀柔区雁栖湖雁水路甲18号</p>
                     <p>出行建议：乘坐我们的班车、公交、自驾车</p>
                 </div>
             </div>
-            <div style="width:100%;height:100%;border:#ccc solid 1px;font-size:12px" id="map"></div>
+            <div style="width:100%;height:100%;border:#ccc solid 1px;font-size:12px" id="map" class="pc"></div>
         </div>
    </div>
-   <div class="main6">
+   <div class="main6" id="main6">
         <div class="header">
             <div class="title">
                 <div class="glyphicon"></div><span>合作伙伴</span>
@@ -153,38 +215,5 @@
        <div class="content">
        </div>
    </div>
-<script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-      createMap();//创建地图
-      setMapEvent();//设置地图事件
-      addMapControl();//向地图添加控件
-      addMapOverlay();//向地图添加覆盖物
-    }
-    function createMap(){
-      map = new BMap.Map("map");
-      map.centerAndZoom(new BMap.Point(116.684,40.392905),15);
-    }
-    function setMapEvent(){
-      map.enableDragging();
-    }
-    function addClickHandler(target,window){
-      target.addEventListener("click",function(){
-        target.openInfoWindow(window);
-      });
-    }
-    function addMapOverlay(){
-    }
-    //向地图添加控件
-    function addMapControl(){
-      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
-      map.addControl(scaleControl);
-      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-      map.addControl(navControl);
-    }
-    var map;
-    initMap();
-</script>
 </body>
 </html>

@@ -16,9 +16,9 @@ $(function(){
                 phone.phone_init();
             });
         }else{
-            require(['pc'], function (pc){
+            require(['pc', 'baidumap'], function (pc, baidumap){
                 pc.pc_init();
+                baidumap.map_init();
             })
         }
-
 });

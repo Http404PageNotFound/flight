@@ -6,6 +6,10 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 	float: right;
 }
 
+.phone{
+    display:none;
+}
+
 .hd{
     height: 60px;
     border-top: 1px solid #cccccc;
@@ -64,6 +68,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   overflow: hidden;
   background-position: 0 62px;
   position: relative;
+  background-size: 100% 508px;
 }
 
 .main2 {
@@ -165,6 +170,17 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   display: inline-block;
 }
 
+.banner{
+  background: url('../images/banner.png') center center no-repeat;
+  width: 1498px;
+  height:291px;
+  position:absolute;
+  left: -674px;
+  top: -98px;
+  background-size: contain;
+
+}
+
 .banner_title{
   background: url('../images/banner_title.png') center center no-repeat;
   background-size: contain;
@@ -192,7 +208,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 }
 
 .main2 .header{
-    height: 111px;
+    height: 82px;
 }
 
 .main2 .title{
@@ -228,7 +244,8 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   text-align: center;
   font-size: 18px;
   width: 890px;
-  margin: 0 auto 29px;
+  margin: 0 auto;
+  line-height: 2em;
 }
 
 .main3 {

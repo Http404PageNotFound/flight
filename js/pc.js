@@ -53,7 +53,7 @@ define(function(){
                 {
                     src: 'images/schedules/schedule2.png',
                     date: '10:20 - 10:40',
-                    name: '曾浩：:',
+                    name: '曾浩：',
                     speech: '智能的空中节点将改变什么？',
                     desc: '来看看无人机与机器视觉和人工智能相结合将带来什么样令人赞叹的新体验？'
                 },
@@ -85,8 +85,8 @@ define(function(){
                 name: '主办方',
                 logos: [
                     {
-                        src: '1',
-                        width: '249'
+                        src: '0',
+                        width: '184'
                     }
                 ]
             },
@@ -109,80 +109,8 @@ define(function(){
                 ]
             },
             {
-                name: '合作媒体',
-                logos: [
-                    {
-                        src: '4',
-                        width: '96'
-                    },
-                    {
-                        src: '5',
-                        width: '186'
-                    },
-                    {
-                        src: '6',
-                        width: '185'
-                    },
-                    {
-                        src: '7',
-                        width: '185'
-                    },
-                    {
-                        src: '8',
-                        width: '160'
-                    },
-                    {
-                        src: '9',
-                        width: '180'
-                    }
-                ]
-            },
-            {
-                logos: [
-                    {
-                        src: '10',
-                        width: '121'
-                    },
-                    {
-                        src: '11',
-                        width: '161'
-                    },
-                    {
-                        src: '12',
-                        width: '181'
-                    },
-                    {
-                        src: '13',
-                        width: '143'
-                    },
-                    {
-                        src: '14',
-                        width: '136'
-                    },
-                    {
-                        src: '15',
-                        width: '157'
-                    },
-                    {
-                        src: '16',
-                        width: '182'
-                    }
-                ]
-            },
-            {
-                logos: [
-                    {
-                        src: '17',
-                        width: '230'
-                    },
-                    {
-                        src: '18',
-                        width: '251'
-                    },
-                    {
-                        src: '19',
-                        width: '244'
-                    },
+                name: '独家视频直播',
+                logos:[
                     {
                         src: '20',
                         width: '282'
@@ -190,7 +118,8 @@ define(function(){
                 ]
             },
             {
-                logos: [
+                name: '战略合作',
+                logos:[
                     {
                         src: '21',
                         width: '234'
@@ -202,7 +131,12 @@ define(function(){
                     {
                         src: '23',
                         width: '123'
-                    },
+                    }
+                ]
+            },
+            {
+                name: '合作媒体',
+                logos: [
                     {
                         src: '24',
                         width: '205'
@@ -249,6 +183,119 @@ define(function(){
                     }
                 ]
             }
+//            ,
+//            {
+//                logos: [
+//                    {
+//                        src: '10',
+//                        width: '121'
+//                    },
+//                    {
+//                        src: '11',
+//                        width: '161'
+//                    },
+//                    {
+//                        src: '12',
+//                        width: '181'
+//                    },
+//                    {
+//                        src: '13',
+//                        width: '143'
+//                    },
+//                    {
+//                        src: '14',
+//                        width: '136'
+//                    },
+//                    {
+//                        src: '15',
+//                        width: '157'
+//                    },
+//                    {
+//                        src: '16',
+//                        width: '182'
+//                    }
+//                ]
+//            },
+//            {
+//                logos: [
+//                    {
+//                        src: '17',
+//                        width: '230'
+//                    },
+//                    {
+//                        src: '18',
+//                        width: '251'
+//                    },
+//                    {
+//                        src: '19',
+//                        width: '244'
+//                    },
+//                    {
+//                        src: '20',
+//                        width: '282'
+//                    }
+//                ]
+//            },
+//            {
+//                logos: [
+//                    {
+//                        src: '21',
+//                        width: '234'
+//                    },
+//                    {
+//                        src: '22',
+//                        width: '221'
+//                    },
+//                    {
+//                        src: '23',
+//                        width: '123'
+//                    },
+//                    {
+//                        src: '24',
+//                        width: '205'
+//                    },
+//                    {
+//                        src: '25',
+//                        width: '111'
+//                    },
+//                    {
+//                        src: '26',
+//                        width: '70'
+//                    },
+//                    {
+//                        src: '27',
+//                        width: '149'
+//                    }
+//                ]
+//            },
+//            {
+//                logos: [
+//                    {
+//                        src: '28',
+//                        width: '104'
+//                    },
+//                    {
+//                        src: '29',
+//                        width: '95'
+//                    },
+//                    {
+//                        src: '30',
+//                        width: '161'
+//                    },
+//                    {
+//                        src: '31',
+//                        width: '161'
+//                    },
+//                    {
+//                        src: '32',
+//                        width: '204'
+//                    },
+//                    {
+//                        src: '33',
+//                        width: '204'
+//                    }
+//                ]
+//            }
         ];
         $('.main3 table tbody').html(_.template($("#guests").html(), {
              guests: guests
