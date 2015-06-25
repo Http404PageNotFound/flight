@@ -27,17 +27,17 @@ define(function(){
                     place: '董事长',
                     src: 'images/guests/zenghao.png'
                 },
+//                {
+//                    name: 'Antoine Balaresque',
+//                    represent: 'Lily Camera',
+//                    place: '创始人 & CEO',
+//                    src: 'images/guests/AntoineBalaresque.png'
+//                },
                 {
-                    name: 'Antoine Balaresque',
-                    represent: 'Lily Camera',
-                    place: '创始人 & CEO',
-                    src: 'images/guests/AntoineBalaresque.png'
-                },
-                {
-                    name: 'Henri Seydoux',
+                    name: 'Nicolas Halftermeyer',
                     represent: 'Parrot',
-                    place: '创始人 & CEO',
-                    src: 'images/guests/HenriSeydoux.png'
+                    place: 'CMO',
+                    src: 'images/guests/NicolasHalftermeyer.png'
                 },
                 {
                     name: 'Troy Widgery',
@@ -62,23 +62,23 @@ define(function(){
                     speech: '智能的空中节点将改变什么？',
                     desc: '来看看无人机与机器视觉和人工智能相结合将带来什么样令人赞叹的新体验？'
                 },
-                {
-                    src: 'images/schedules/schedule3.png',
-                    date: '10:40 - 11:00',
-                    name: 'Antoine Balaresque：',
-                    speech: '更小与更大，更简单与更科技',
-                    desc: '仅通过一个视频和一个炫酷的理念就风靡全球并赢得了1亿美元的估值。这家无人机创业公司到底做对了什么？'
-                },
+//                {
+//                    src: 'images/schedules/schedule3.png',
+//                    date: '10:40 - 11:00',
+//                    name: 'Antoine Balaresque：',
+//                    speech: '更小与更大，更简单与更科技',
+//                    desc: '仅通过一个视频和一个炫酷的理念就风靡全球并赢得了1亿美元的估值。这家无人机创业公司到底做对了什么？'
+//                },
                 {
                     src: 'images/schedules/schedule4.png',
-                    date: '11:00 - 11:20',
-                    name: 'Henri Seydoux：',
+                    date: '10:40 - 11:00',
+                    name: 'Nicolas Halftermeyer：',
                     speech: '来认识超乎想象的人类新伙伴',
                     desc: '如同你从未想象过的空中精灵，Parrot 无人机的阵列舞蹈表演将大开你的眼界和脑洞。'
                 },
                 {
                     src: 'images/schedules/schedule5.png',
-                    date: '11:20 - 11:40',
+                    date: '11:00 - 11:20',
                     name: 'Troy Widgery：',
                     speech: '像钢铁侠一样飞行',
                     desc: '中国首次实用性喷气背包飞行表演，和一场与其创造者的深度交流。科幻中的想象，已经变成现实。'
@@ -92,12 +92,7 @@ define(function(){
                     {
                         src: '0',
                         width: '92'
-                    }
-                ]
-            },
-            {
-                name: '联合主办',
-                logos: [
+                    },
                     {
                         src: '2',
                         width: '115.5'

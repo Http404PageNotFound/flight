@@ -72,7 +72,7 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
 }
 
 .main2 {
-  height: 261px;
+  height: 351px;
   width: 100%;
   background: #ffffff;
 }
@@ -246,6 +246,27 @@ body,input,textarea,button,select,pre,code{font-family:  'Hiragino Sans GB','Mic
   width: 890px;
   margin: 0 auto;
   line-height: 2em;
+}
+
+.main2 .content .buy{
+  width: 150px;
+  height: 50px;
+  margin: 40px auto 0;
+}
+
+.main2 .content .buy a:link, .main2 .content .buy a:visited, .main2 .content .buy a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  background-color: #ec3834;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.main2 .content .buy a:active, .main2 .content .buy a:hover{
+  background-color: #e10601
 }
 
 .main3 {
