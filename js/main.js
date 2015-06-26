@@ -1,7 +1,4 @@
 $(function(){
-        $('.share').click(function(e){
-            $('.jiathis_button_' + $(e.target).data('share')).click();
-        });
         var system ={
                 win : false,
                 mac : false,

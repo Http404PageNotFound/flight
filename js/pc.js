@@ -168,7 +168,7 @@ define(function(){
                     },
                     {
                         src: '29',
-                        width: '95'
+                        width: '60'
                     },
                     {
                         src: '30',
@@ -185,6 +185,66 @@ define(function(){
                     {
                         src: '33',
                         width: '204'
+                    }
+                ]
+            },
+            {
+                logos: [
+                    {
+                        src: '34',
+                        width: '160'
+                    },
+                    {
+                        src: '35',
+                        width: '107'
+                    },
+                    {
+                        src: '36',
+                        width: '224'
+                    },
+                    {
+                        src: '37',
+                        width: '186'
+                    },
+                    {
+                        src: '38',
+                        width: '97'
+                    }
+                ]
+            },
+            {
+                logos: [
+                    {
+                        src: '39',
+                        width: '116'
+                    },
+                    {
+                        src: '40',
+                        width: '130.7'
+                    },
+                    {
+                        src: '41',
+                        width: '116.39'
+                    },
+                    {
+                        src: '42',
+                        width: '140.5'
+                    },
+                    {
+                        src: '43',
+                        width: '136.41'
+                    }
+                ]
+            },
+            {
+                logos: [
+                    {
+                        src: '44',
+                        width: '199.25'
+                    },
+                    {
+                        src: '45',
+                        width: '146.8'
                     }
                 ]
             }

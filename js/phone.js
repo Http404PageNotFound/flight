@@ -7,12 +7,7 @@
  */
 define(function(){
     var phone_init = function(){
-        var zepto = window.Zepto;
         var screen_height = $('.main0').height();
-        var screen_width = $('.main0').width();
-        function iOS() {
-            return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
-        }
         $('.main1').height(screen_height);
         var guests = [
                 {
@@ -163,7 +158,7 @@ define(function(){
                     },
                     {
                         src: '29',
-                        width: '47.5'
+                        width: '30'
                     },
                     {
                         src: '30',
@@ -180,6 +175,72 @@ define(function(){
                     {
                         src: '33',
                         width: '102'
+                    }
+                ]
+            },
+            {
+                logos: [
+                    {
+                        src: '34',
+                        width: '80'
+                    },
+                    {
+                        src: '35',
+                        width: '53.5'
+                    },
+                    {
+                        src: '36',
+                        width: '112'
+                    }
+                ]
+            },
+           {
+                logos : [
+                    {
+                        src: '37',
+                        width: '93'
+                    },
+                    {
+                        src: '38',
+                        width: '48.5'
+                    },
+                    {
+                        src: '39',
+                        width: '58'
+                    }
+                ]
+            },
+            {
+                logos: [
+                    {
+                        src: '40',
+                        width: '65.35'
+                    },
+                    {
+                        src: '41',
+                        width: '58.195',
+                        extra: 'margin-middle'
+                    },
+                    {
+                        src: '42',
+                        width: '70.25',
+                        extra: 'margin-middle'
+                    }
+                ]
+            },
+            {
+                logos: [
+                    {
+                        src: '43',
+                        width: '68.205'
+                    },
+                    {
+                        src: '44',
+                        width: '99.625'
+                    },
+                    {
+                        src: '45',
+                        width: '73.4'
                     }
                 ]
             }
