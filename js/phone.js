@@ -14,33 +14,52 @@ define(function(){
                     name: '潘农菲',
                     represent: 'DJI大疆创新',
                     place: '副总裁',
+                    id: 0,
                     src: 'images/guests/pannongfei.png'
                 },
                 {
                     name: '曾浩',
                     represent: '深圳零度',
                     place: '董事长',
+                    id: 1,
                     src: 'images/guests/zenghao.png'
                 },
 //                {
 //                    name: 'Antoine Balaresque',
 //                    represent: 'Lily Camera',
 //                    place: '创始人 & CEO',
+//                    id: 2,
 //                    src: 'images/guests/AntoineBalaresque.png'
 //                },
                 {
                     name: 'Nicolas Halftermeyer',
                     represent: 'Parrot',
                     place: 'CMO',
+                    id: 2,
                     src: 'images/guests/NicolasHalftermeyer.png'
                 },
+//                {
+//                    name: 'Troy Widgery',
+//                    represent: 'Jetpack International',
+//                    place: '创始人 & CEO',
+//                    id: 4,
+//                    src: 'images/guests/TroyWidgery.png'
+//                }
+                {
+                    name: 'Ambar Pansari',
+                    represent: 'Skycatch',
+                    place: 'Director of Product',
+                    id: 3,
+                    src: 'images/guests/AmbarPansari.png'
+                } ,
                 {
                     name: 'Troy Widgery',
                     represent: 'Jetpack International',
                     place: '创始人 & CEO',
+                    id: 4,
                     src: 'images/guests/TroyWidgery.png'
                 }
-        ];
+            ]
 
         var schedules = [
                 {
@@ -60,6 +79,7 @@ define(function(){
 //                {
 //                    src: 'images/schedules/schedule3.png',
 //                    date: '10:40 - 11:00',
+//                    id: 2,
 //                    name: 'Antoine Balaresque：',
 //                    speech: '更小与更大，更简单与更科技',
 //                    desc: '仅通过一个视频和一个炫酷的理念就风靡全球并赢得了1亿美元的估值。这家无人机创业公司到底做对了什么？'
@@ -72,8 +92,15 @@ define(function(){
                     desc: '如同你从未想象过的空中精灵，Parrot 无人机的阵列舞蹈表演将大开你的眼界和脑洞。'
                 },
                 {
-                    src: 'images/schedules/schedule5.png',
+                    src: 'images/schedules/schedule3.png',
                     date: '11:00 - 11:20',
+                    name: 'Ambar Pansari：',
+                    speech: '在尼泊尔参与重建的日子',
+                    desc: ''
+                },
+                {
+                    src: 'images/schedules/schedule5.png',
+                    date: '11:20 - 11:40',
                     name: 'Troy Widgery：',
                     speech: '像钢铁侠一样飞行',
                     desc: '中国首次实用性喷气背包飞行表演，和一场与其创造者的深度交流。科幻中的想象，已经变成现实。'

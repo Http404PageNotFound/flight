@@ -34,9 +34,23 @@ define(function(){
                     name: 'Nicolas Halftermeyer',
                     represent: 'Parrot',
                     place: 'CMO',
-                    id: 3,
+                    id: 2,
                     src: 'images/guests/NicolasHalftermeyer.png'
                 },
+//                {
+//                    name: 'Troy Widgery',
+//                    represent: 'Jetpack International',
+//                    place: '创始人 & CEO',
+//                    id: 4,
+//                    src: 'images/guests/TroyWidgery.png'
+//                }
+                {
+                    name: 'Ambar Pansari',
+                    represent: 'Skycatch',
+                    place: 'Director of Product',
+                    id: 3,
+                    src: 'images/guests/AmbarPansari.png'
+                } ,
                 {
                     name: 'Troy Widgery',
                     represent: 'Jetpack International',
@@ -76,13 +90,21 @@ define(function(){
                     src: 'images/schedules/schedule4.png',
                     date: '10:40 - 11:00',
                     name: 'Nicolas Halftermeyer：',
-                    id: 3,
+                    id: 2,
                     speech: '来认识超乎想象的人类新伙伴',
                     desc: '如同你从未想象过的空中精灵，Parrot 无人机的阵列舞蹈表演将大开你的眼界和脑洞。'
                 },
                 {
-                    src: 'images/schedules/schedule5.png',
+                    src: 'images/schedules/schedule3.png',
                     date: '11:00 - 11:20',
+                    name: 'Ambar Pansari：',
+                    id: 3,
+                    speech: '在尼泊尔参与重建的日子',
+                    desc: ''
+                },
+                {
+                    src: 'images/schedules/schedule5.png',
+                    date: '11:20 - 11:40',
                     name: 'Troy Widgery：',
                     id: 4,
                     speech: '像钢铁侠一样飞行',
