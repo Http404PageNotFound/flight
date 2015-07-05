@@ -96,7 +96,7 @@ define(function(){
                     date: '11:00 - 11:20',
                     name: 'Ambar Pansari：',
                     speech: '在尼泊尔参与重建的日子',
-                    desc: ''
+                    desc: '无人机已经成为了尼泊尔重建的得力助手，无人机、地图和数据这三者之间碰撞出了怎样的化学反应？'
                 },
                 {
                     src: 'images/schedules/schedule5.png',
