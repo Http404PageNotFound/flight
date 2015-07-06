@@ -267,6 +267,10 @@ define(function(){
                     {
                         src: '45',
                         width: '146.8'
+                    },
+                    {
+                        src: '46',
+                        width: '215'
                     }
                 ]
             }

@@ -268,6 +268,10 @@ define(function(){
                     {
                         src: '45',
                         width: '73.4'
+                    },
+                    {
+                        src: '46',
+                        width: '107.5'
                     }
                 ]
             }
