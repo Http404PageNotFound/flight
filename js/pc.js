@@ -17,12 +17,19 @@ define(function(){
                     src: 'images/guests/pannongfei.png'
                 },
                 {
-                    name: '曾浩',
+                    name: '杨建军',
                     represent: '深圳零度',
-                    place: '董事长',
+                    place: 'CEO',
                     id: 1,
-                    src: 'images/guests/zenghao.png'
+                    src: 'images/guests/yangjianjun.png'
                 },
+//                {
+//                    name: '曾浩',
+//                    represent: '深圳零度',
+//                    place: '董事长',
+//                    id: 1,
+//                    src: 'images/guests/zenghao.png'
+//                },
 //                {
 //                    name: 'Antoine Balaresque',
 //                    represent: 'Lily Camera',
@@ -73,7 +80,7 @@ define(function(){
                 {
                     src: 'images/schedules/schedule2.png',
                     date: '10:20 - 10:40',
-                    name: '曾浩：',
+                    name: '杨建军：',
                     id: 1,
                     speech: '智能的空中节点将改变什么？',
                     desc: '来看看无人机与机器视觉和人工智能相结合将带来什么样令人赞叹的新体验？'
@@ -416,6 +423,12 @@ define(function(){
             var video_position = $('.main2').offset().top;
 		    $.scrollTo(video_position - 71, 500);
 	    });
+        $("#broadcast").click(function(){
+            var _this = this;
+            excahnge_zones(_this);
+            var video_position = $('.main7').offset().top;
+		    $.scrollTo(video_position - 71, 500);
+	    });
         $("#invites").click(function(){
             var _this = this;
             excahnge_zones(_this);
@@ -442,6 +455,10 @@ define(function(){
 		    $.scrollTo(video_position - 31, 500);
 	    });
         var mains = [
+            {
+                id: $("#broadcast"),
+                obj: $('.main7').offset().top- 152
+            },
             {
                 id: $("#meeting"),
                 obj: $('.main2').offset().top- 92
@@ -477,8 +494,9 @@ define(function(){
             }
         }).throttle(500);
 
-        $(window).bind('scroll', guide);
+        $('.main7 .content.pc .video').html('<iframe class="video_iframe" style=" z-index:1; " src="http://v.qq.com/iframe/player.html?vid=a0159c24fex&amp;width=960&amp;height=568&amp;auto=0" allowfullscreen="" frameborder="0" height="568" width="960"></iframe>');
 
+        $(window).bind('scroll', guide);
         $(window).bind('hashchange', (function(){
             var target = $(location.hash);
             if(target.length==1){
